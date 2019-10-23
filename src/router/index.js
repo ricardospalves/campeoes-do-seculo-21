@@ -2,8 +2,9 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Team from '../views/Team.vue'
+import state from '../store/state'
 
-const DEFAULT_TITLE = 'Campeões do Século 21'
+const DEFAULT_TITLE = state.appName
 
 Vue.use(VueRouter)
 

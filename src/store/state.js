@@ -1,5 +1,5 @@
 class Team {
-  constructor({ id, name, shortname, honours: { mundial = [], libertadores = [], sulAmericana = [], recopa = [], suruga = [], brasileirao = [], copaDoBrasil = [], copaDosCampeoes = [] } }) {
+  constructor({ id, name, shortname, honours: { mundial = [], libertadores = [], sulAmericana = [], recopa = [], jLeagueYbcLevainCupConmebolSudamericanaFinal = [], brasileirao = [], copaDoBrasil = [], copaDosCampeoes = [] } }) {
     this.id = id
     this.name = name
     this.shortname = shortname
@@ -8,7 +8,7 @@ class Team {
       libertadores,
       sulAmericana,
       recopa,
-      suruga,
+      jLeagueYbcLevainCupConmebolSudamericanaFinal,
       brasileirao,
       copaDoBrasil,
       copaDosCampeoes
@@ -17,6 +17,7 @@ class Team {
 }
 
 export default {
+  appName: 'Campeões do Século 21',
   teams: [
     new Team({
       id: 'internacional',
@@ -27,7 +28,7 @@ export default {
         libertadores: [2006, 2010],
         sulAmericana: [2008],
         recopa: [2007, 2011],
-        suruga: [2009]
+        jLeagueYbcLevainCupConmebolSudamericanaFinal: [2009]
       }
     }),
     new Team({
@@ -90,7 +91,7 @@ export default {
       shortname: 'Athletico',
       honours: {
         sulAmericana: [2018],
-        suruga: [2019],
+        jLeagueYbcLevainCupConmebolSudamericanaFinal: [2019],
         brasileirao: [2001],
         copaDoBrasil: [2019]
       }
