@@ -1,8 +1,21 @@
 <template>
   <div>
-    <h1>
+    <h2>
       {{ team.name }}
-    </h1>
+    </h2>
+
+    <div
+      v-for="(honour, key) in honours"
+      :key="key"
+    >
+      <h3>
+        {{ key }}
+      </h3>
+
+      <p>
+        {{ honour.join(', ').replace(/,([^,]*)$/, ' e $1') }}
+      </p>
+    </div>
   </div>
 </template>
 
