@@ -2,7 +2,7 @@
   <div>
     <ul>
       <li
-        v-for="team in teams"
+        v-for="team in randomTeams"
         :key="team.id"
       >
         <router-link
@@ -21,12 +21,12 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapGetters } from 'vuex'
 
 export default {
   computed: {
-    ...mapState([
-      'teams'
+    ...mapGetters([
+      'randomTeams'
     ])
   }
 }
