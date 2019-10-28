@@ -1,5 +1,5 @@
 class Team {
-  constructor({ id, name, shortname, honours: { mundial = [], libertadores = [], sulAmericana = [], recopa = [], jLeagueYbcLevainCupConmebolSudamericanaFinal = [], brasileirao = [], copaDoBrasil = [], copaDosCampeoes = [] } }) {
+  constructor({ id, name, shortname, honours: { mundial = [], libertadores = [], sulAmericana = [], recopa = [], jLeagueYbcLevainCupConmebolSudamericanaFinal = [], brasileirao = [], copaDoBrasil = [], supercopaDoBrasil = [], copaDosCampeoes = [] } }) {
     this.id = id
     this.name = name
     this.shortname = shortname
@@ -11,6 +11,7 @@ class Team {
       jLeagueYbcLevainCupConmebolSudamericanaFinal,
       brasileirao,
       copaDoBrasil,
+      supercopaDoBrasil,
       copaDosCampeoes
     }
   }
