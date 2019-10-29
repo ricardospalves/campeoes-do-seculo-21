@@ -1,5 +1,9 @@
 <template>
   <div>
+    <svg class="crest">
+      <use :xlink:href="team.crest"/>
+    </svg>
+
     <h2>
       {{ team.name }}
     </h2>
@@ -18,6 +22,15 @@
     </div>
   </div>
 </template>
+
+<style module>
+  .crest {
+    --var: 8rem;
+    display: block;
+    width: var(--var);
+    height: var(--var);
+  }
+</style>
 
 <script>
 export default {

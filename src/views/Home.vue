@@ -13,12 +13,24 @@
             }
           }"
         >
+          <svg class="crest">
+            <use :xlink:href="team.crest"/>
+          </svg>
+
           {{ team.shortname }}
         </router-link>
       </li>
     </ul>
   </div>
 </template>
+
+<style module>
+  .crest {
+    --size: 2rem;
+    width: var(--size);
+    height: var(--size);
+  }
+</style>
 
 <script>
 import { mapGetters } from 'vuex'
