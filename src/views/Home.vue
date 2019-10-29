@@ -24,7 +24,7 @@
   </div>
 </template>
 
-<style module>
+<style scoped>
   .crest {
     --size: 2rem;
     width: var(--size);

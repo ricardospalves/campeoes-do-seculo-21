@@ -23,7 +23,7 @@
   </div>
 </template>
 
-<style module>
+<style scoped>
   .crest {
     --var: 8rem;
     display: block;
