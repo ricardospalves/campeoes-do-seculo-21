@@ -1,5 +1,5 @@
 class Team {
-  constructor({ id, crest, name, shortname, honours: { mundial = [], libertadores = [], sulAmericana = [], recopa = [], jLeagueYbcLevainCupConmebolSudamericanaFinal = [], brasileirao = [], copaDoBrasil = [], supercopaDoBrasil = [], copaDosCampeoes = [] } }) {
+  constructor({ id, crest, name, shortname, honours: { mundial = [], libertadores = [], sulAmericana = [], recopa = [], jLeagueConmebol = [], brasileirao = [], copaDoBrasil = [], supercopaDoBrasil = [], copaDosCampeoes = [] } }) {
     this.id = id
     this.crest = crest
     this.name = name
@@ -9,7 +9,7 @@ class Team {
       libertadores,
       sulAmericana,
       recopa,
-      jLeagueYbcLevainCupConmebolSudamericanaFinal,
+      jLeagueConmebol,
       brasileirao,
       copaDoBrasil,
       supercopaDoBrasil,
@@ -37,7 +37,7 @@ export default {
       shortname: 'Athletico - PR',
       honours: {
         sulAmericana: [2018],
-        jLeagueYbcLevainCupConmebolSudamericanaFinal: [2019],
+        jLeagueConmebol: [2019],
         brasileirao: [2001],
         copaDoBrasil: [2019]
       }
@@ -176,7 +176,7 @@ export default {
         libertadores: [2006, 2010],
         sulAmericana: [2008],
         recopa: [2007, 2011],
-        jLeagueYbcLevainCupConmebolSudamericanaFinal: [2009]
+        jLeagueConmebol: [2009]
       }
     }),
     new Team({
