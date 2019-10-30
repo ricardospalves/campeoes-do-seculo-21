@@ -13,9 +13,7 @@
             }
           }"
         >
-          <svg class="crest">
-            <use :xlink:href="team.crest"/>
-          </svg>
+          <Crest class="crest" :use="team.crest"/>
 
           {{ team.shortname }}
         </router-link>
@@ -33,9 +31,13 @@
 </style>
 
 <script>
+import Crest from '../components/Crest'
 import { mapGetters } from 'vuex'
 
 export default {
+  components: {
+    Crest
+  },
   computed: {
     ...mapGetters([
       'randomTeams'

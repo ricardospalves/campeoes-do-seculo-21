@@ -23,7 +23,7 @@ export default {
   teams: [
     new Team({
       id: 'chapecoense',
-      crest: '#crest-chapecoense',
+      crest: 'crest-chapecoense',
       name: 'Associação Chapecoense de Futebol',
       shortname: 'Chapecoense',
       honours: {
@@ -32,7 +32,7 @@ export default {
     }),
     new Team({
       id: 'athletico-pr',
-      crest: '#crest-athletico-pr',
+      crest: 'crest-athletico-pr',
       name: 'Club Athletico Paranaense',
       shortname: 'Athletico - PR',
       honours: {
@@ -44,7 +44,7 @@ export default {
     }),
     new Team({
       id: 'vasco',
-      crest: '#crest-vasco',
+      crest: 'crest-vasco',
       name: 'Club de Regatas Vasco da Gama',
       shortname: 'Vasco',
       honours: {
@@ -53,7 +53,7 @@ export default {
     }),
     new Team({
       id: 'atletico-mg',
-      crest: '#crest-atletico-mg',
+      crest: 'crest-atletico-mg',
       name: 'Clube Atlético Mineiro',
       shortname: 'Atlético - MG',
       honours: {
@@ -64,7 +64,7 @@ export default {
     }),
     new Team({
       id: 'flamengo',
-      crest: '#crest-flamengo',
+      crest: 'crest-flamengo',
       name: 'Clube de Regatas do Flamengo',
       shortname: 'Flamengo',
       honours: {
@@ -75,7 +75,7 @@ export default {
     }),
     new Team({
       id: 'cruzeiro',
-      crest: '#crest-cruzeiro',
+      crest: 'crest-cruzeiro',
       name: 'Cruzeiro Esporte Clube',
       shortname: 'Cruzeiro',
       honours: {
@@ -85,7 +85,7 @@ export default {
     }),
     new Team({
       id: 'santo-andre',
-      crest: '#crest-santo-andre',
+      crest: 'crest-santo-andre',
       name: 'Esporte Clube Santo André',
       shortname: 'Santo André',
       honours: {
@@ -94,7 +94,7 @@ export default {
     }),
     new Team({
       id: 'fluminense',
-      crest: '#crest-fluminense',
+      crest: 'crest-fluminense',
       name: 'Fluminense Football Club',
       shortname: 'Fluminense',
       honours: {
@@ -104,7 +104,7 @@ export default {
     }),
     new Team({
       id: 'gremio',
-      crest: '#crest-gremio',
+      crest: 'crest-gremio',
       name: 'Grêmio Foot-Ball Porto Alegrense',
       shortname: 'Grêmio',
       honours: {
@@ -115,7 +115,7 @@ export default {
     }),
     new Team({
       id: 'paulista',
-      crest: '#crest-paulista',
+      crest: 'crest-paulista',
       name: 'Paulista Futebol Clube',
       shortname: 'Paulista',
       honours: {
@@ -124,7 +124,7 @@ export default {
     }),
     new Team({
       id: 'paysandu',
-      crest: '#crest-paysandu',
+      crest: 'crest-paysandu',
       name: 'Paysandu Sport Club',
       shortname: 'Paysandu',
       honours: {
@@ -133,7 +133,7 @@ export default {
     }),
     new Team({
       id: 'santos',
-      crest: '#crest-santos',
+      crest: 'crest-santos',
       name: 'Santos Futebol Clube',
       shortname: 'Santos',
       honours: {
@@ -145,7 +145,7 @@ export default {
     }),
     new Team({
       id: 'palmeiras',
-      crest: '#crest-palmeiras',
+      crest: 'crest-palmeiras',
       name: 'Sociedade Esportiva Palmeiras',
       shortname: 'Palmeiras',
       honours: {
@@ -155,7 +155,7 @@ export default {
     }),
     new Team({
       id: 'corinthians',
-      crest: '#crest-corinthians',
+      crest: 'crest-corinthians',
       name: 'Sport Club Corinthians Paulista',
       shortname: 'Corinthians',
       honours: {
@@ -168,7 +168,7 @@ export default {
     }),
     new Team({
       id: 'internacional',
-      crest: '#crest-internacional',
+      crest: 'crest-internacional',
       name: 'Sport Club Internacional',
       shortname: 'Internacional',
       honours: {
@@ -181,7 +181,7 @@ export default {
     }),
     new Team({
       id: 'sport',
-      crest: '#crest-sport',
+      crest: 'crest-sport',
       name: 'Sport Club do Recife',
       shortname: 'Sport',
       honours: {
@@ -190,7 +190,7 @@ export default {
     }),
     new Team({
       id: 'sao-paulo',
-      crest: '#crest-sao-paulo',
+      crest: 'crest-sao-paulo',
       name: 'São Paulo Futebol Clube',
       shortname: 'São Paulo',
       honours: {

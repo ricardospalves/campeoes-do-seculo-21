@@ -1,8 +1,6 @@
 <template>
   <div>
-    <svg class="crest">
-      <use :xlink:href="team.crest"/>
-    </svg>
+    <Crest class="crest" :use="team.crest"/>
 
     <h2>
       {{ team.name }}
@@ -33,10 +31,15 @@
 </style>
 
 <script>
+import Crest from '../components/Crest'
+
 export default {
   props: [
     'id'
   ],
+  components: {
+    Crest
+  },
   computed: {
     team() {
       return this.$store.getters.getTeamById(this.id)
