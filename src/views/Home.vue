@@ -1,5 +1,18 @@
 <template>
   <div>
+    <div
+      v-for="champion in latestChampions"
+      :key="champion.competition"
+    >
+      <h2>
+        {{ champion.competition }}
+      </h2>
+
+      <p>
+        {{ champion.team.name }}
+      </p>
+    </div>
+
     <ul>
       <li
         v-for="team in randomTeams"
@@ -40,53 +53,42 @@ export default {
   },
   computed: {
     ...mapGetters([
-      'randomTeams'
+      'randomTeams',
+      'latestCompetitionChampion'
     ]),
-    mostRecentChampions() {
-      const mostRecent = key => {
-        return this.randomTeams
-          .filter(team => team.honours[key].length)
-          .reduce((accumulator, current) => {
-            const accumulatorMostRecent = Math.max(...accumulator.honours[key])
-            const currentMostRecent = Math.max(...current.honours[key])
-            const boolean = accumulatorMostRecent > currentMostRecent
-
-            return boolean ? accumulator : current
-          })
-      }
-
+    latestChampions() {
       return [
         {
           competition: 'Mundial',
-          team: mostRecent('mundial')
+          team: this.latestCompetitionChampion('mundial')
         },
         {
           competition: 'Libertadores',
-          team: mostRecent('libertadores')
+          team: this.latestCompetitionChampion('libertadores')
         },
         {
           competition: 'Sul-Americana',
-          team: mostRecent('sulAmericana')
+          team: this.latestCompetitionChampion('sulAmericana')
         },
         {
           competition: 'Recopa',
-          team: mostRecent('recopa')
+          team: this.latestCompetitionChampion('recopa')
         },
         {
           competition: 'J.League/CONMEBOL',
-          team: mostRecent('jLeagueConmebol')
+          team: this.latestCompetitionChampion('jLeagueConmebol')
         },
         {
           competition: 'Brasileirão',
-          team: mostRecent('brasileirao')
+          team: this.latestCompetitionChampion('brasileirao')
         },
         {
           competition: 'Copa do Brasil',
-          team: mostRecent('copaDoBrasil')
+          team: this.latestCompetitionChampion('copaDoBrasil')
         },
         {
           competition: 'Copa dos Campeões',
-          team: mostRecent('copaDosCampeoes')
+          team: this.latestCompetitionChampion('copaDosCampeoes')
         }
       ]
     }
