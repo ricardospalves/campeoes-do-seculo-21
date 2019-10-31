@@ -7,15 +7,15 @@
     </h2>
 
     <div
-      v-for="(honour, key) in honours"
-      :key="key"
+      v-for="honour in honours"
+      :key="honour.name"
     >
       <h3>
-        {{ key }}
+        {{ honour.name }}
       </h3>
 
       <p>
-        {{ honour.join(', ').replace(/,([^,]*)$/, ' e $1') }}
+        {{ honour.years | addAnd }}
       </p>
     </div>
   </div>
@@ -45,18 +45,15 @@ export default {
       return this.$store.getters.getTeamById(this.id)
     },
     honours() {
-      const honours = this.team.honours
-      const validHonours = {}
-
-      for(const key in honours) {
-        const years = honours[key]
-
-        if(years.length) {
-          validHonours[key] = years
-        }
-      }
-
-      return validHonours
+      return this.team.honours
+        .filter(honour => honour.years.length)
+    }
+  },
+  filters: {
+    addAnd(array) {
+      return array
+        .join(', ')
+        .replace(/,([^,]*)$/, ' e $1')
     }
   }
 }
