@@ -1,5 +1,6 @@
 <template>
   <router-link
+    class="team"
     :to="{
       name: 'team',
       params: {
@@ -7,9 +8,10 @@
       }
     }"
   >
-    <Crest :use="crest"/>
-
-    <slot name="text"></slot>
+    <Crest
+      class="team__crest"
+      :use="crest"
+    />
   </router-link>
 </template>
 
