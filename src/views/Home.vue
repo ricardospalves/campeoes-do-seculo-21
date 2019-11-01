@@ -1,42 +1,32 @@
 <template>
   <div>
-    <ul>
-      <li
-        v-for="team in randomTeams"
-        :key="team.id"
-      >
-        <router-link
-          :to="{
-            name: 'team',
-            params: {
-              id: team.id
-            }
-          }"
-        >
-          <Crest class="crest" :use="team.crest"/>
-
-          {{ team.shortname }}
-        </router-link>
-      </li>
-    </ul>
+    <Teams :teams="randomTeams"/>
   </div>
 </template>
 
-<style scoped>
-  .crest {
-    --size: 2rem;
-    width: var(--size);
-    height: var(--size);
-  }
+<style>
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
 </style>
 
 <script>
-import Crest from '../components/Crest'
+import Teams from '../components/Teams'
 import { mapGetters } from 'vuex'
 
 export default {
   components: {
-    Crest
+    Teams
   },
   computed: {
     ...mapGetters([
