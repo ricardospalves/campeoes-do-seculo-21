@@ -30,8 +30,22 @@ export default {
   },
   computed: {
     ...mapGetters([
-      'randomTeams'
-    ])
+      'randomTeams',
+      'mostRecentChampion'
+    ]),
+    mostRecentChampions() {
+      const mostRecentChampion = key => this.mostRecentChampion(key)
+      return [
+        mostRecentChampion('mundial'),
+        mostRecentChampion('libertadores'),
+        mostRecentChampion('sulAmericana'),
+        mostRecentChampion('recopa'),
+        mostRecentChampion('jLeagueConmebol'),
+        mostRecentChampion('brasileirao'),
+        mostRecentChampion('copaDoBrasil'),
+        mostRecentChampion('copaDosCampeoes')
+      ]
+    }
   }
 }
 </script>

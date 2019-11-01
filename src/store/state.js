@@ -12,53 +12,53 @@ class Team {
     this.crest = crest
     this.name = name
     this.shortname = shortname
-    this.honours = [
-      new Competition({
+    this.honours = {
+      mundial: new Competition({
         name: 'Copa do Mundo de Clubes da FIFA',
         shortname: 'Mundial de Clubes',
         years: mundial
       }),
-      new Competition({
+      libertadores: new Competition({
         name: 'CONMEBOL Libertadores',
         shortname: 'Libertadores',
         years: libertadores
       }),
-      new Competition({
+      sulAmericana: new Competition({
         name: 'CONMEBOL Sul-Americana',
         shortname: 'Sul-Americana',
         years: sulAmericana
       }),
-      new Competition({
+      recopa: new Competition({
         name: 'CONMEBOL Recopa',
         shortname: 'Recopa',
         years: recopa
       }),
-      new Competition({
+      jLeagueConmebol: new Competition({
         name: 'J.League YBC Levain Cup/CONMEBOL Sudamericana Final',
         shortname: 'J.League/CONMEBOL',
         years: jLeagueConmebol
       }),
-      new Competition({
+      brasileirao: new Competition({
         name: 'Campeonato Brasileiro de Futebol',
         shortname: 'Brasileirão',
         years: brasileirao
       }),
-      new Competition({
+      copaDoBrasil: new Competition({
         name: 'Copa do Brasil de Futebol',
         shortname: 'Copa do Brasil',
         years: copaDoBrasil
       }),
-      new Competition({
+      supercopaDoBrasil: new Competition({
         name: 'Supercopa do Brasil de Futebol',
         shortname: 'Supercopa do Brasil',
         years: supercopaDoBrasil
       }),
-      new Competition({
+      copaDosCampeoes: new Competition({
         name: 'Copa dos Campeões',
         shortname: 'Copa dos Campeões',
         years: copaDosCampeoes
       })
-    ]
+    }
   }
 }
 

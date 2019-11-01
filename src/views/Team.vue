@@ -45,8 +45,20 @@ export default {
       return this.$store.getters.getTeamById(this.id)
     },
     honours() {
-      return this.team.honours
-        .filter(honour => honour.years.length)
+      const team = this.team
+      const honours = team.honours
+      const validHonours = {}
+
+      for(const key in honours) {
+        const honour = honours[key]
+        const hasHonours = honour.years.length
+
+        if(hasHonours) {
+          validHonours[key] = honour
+        }
+      }
+
+      return validHonours
     }
   },
   filters: {
