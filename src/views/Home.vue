@@ -1,12 +1,31 @@
 <template>
-  <div>
-    <Team
-      v-for="team in randomTeams"
-      :key="team.id"
-      :id="team.id"
-      :crest="team.crest"
-    />
-  </div>
+  <article>
+    <section>
+      <h2>
+        Últimos brasileiros campeões de cada competição
+      </h2>
+
+      <Team
+        v-for="team in mostRecentChampions"
+        :key="team.competition.name"
+        :id="team.id"
+        :crest="team.crest"
+      />
+    </section>
+
+    <section>
+      <h2>
+        Todos os brasileiros campeões neste século
+      </h2>
+
+      <Team
+        v-for="team in randomTeams"
+        :key="team.id"
+        :id="team.id"
+        :crest="team.crest"
+      />
+    </section>
+  </article>
 </template>
 
 <script>
