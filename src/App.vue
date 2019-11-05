@@ -7,8 +7,6 @@
   </div>
 </template>
 
-<style></style>
-
 <script>
 import Header from './components/Header'
 import Icons from './components/Icons'

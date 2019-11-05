@@ -1,5 +1,5 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" display="none">
+  <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
     <symbol viewBox="0 0 24 24" id="crest-athletico-pr">
       <path
         fill="#FFF"
@@ -303,13 +303,3 @@
     </symbol>
   </svg>
 </template>
-
-<style>
-
-</style>
-
-<script>
-export default {
-
-}
-</script>

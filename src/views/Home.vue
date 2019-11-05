@@ -9,8 +9,6 @@
   </div>
 </template>
 
-<style></style>
-
 <script>
 import Team from '../components/Team'
 import { mapGetters } from 'vuex'

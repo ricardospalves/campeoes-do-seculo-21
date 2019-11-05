@@ -21,15 +21,6 @@
   </div>
 </template>
 
-<style scoped>
-  .crest {
-    --var: 8rem;
-    display: block;
-    width: var(--var);
-    height: var(--var);
-  }
-</style>
-
 <script>
 import Crest from '../components/Crest'
 

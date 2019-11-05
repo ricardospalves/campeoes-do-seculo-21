@@ -15,8 +15,6 @@
   </router-link>
 </template>
 
-<style></style>
-
 <script>
 import Crest from './Crest'
 
