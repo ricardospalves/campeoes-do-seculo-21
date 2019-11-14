@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Crest class="crest" :use="team.crest"/>
+    <Crest :use="team.crest"/>
 
     <h2>
       {{ team.name }}
