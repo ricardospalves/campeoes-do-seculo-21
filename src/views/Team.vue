@@ -15,7 +15,7 @@
       </h3>
 
       <p>
-        {{ honour.years | addAnd }}
+        {{ honour.years | addAnd }} ({{ honour.years.length }} {{ honour.years.length > 1 ? 'Títulos' : 'Título' }})
       </p>
     </div>
   </div>
