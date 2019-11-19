@@ -10,6 +10,8 @@
     <Crest
       :use="crest"
     />
+
+    <slot></slot>
   </router-link>
 </template>
 

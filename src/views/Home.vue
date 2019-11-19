@@ -5,12 +5,21 @@
         Últimos brasileiros campeões de cada competição
       </h2>
 
-      <Team
+      <div
         v-for="team in mostRecentChampions"
         :key="team.competition.name"
-        :id="team.id"
-        :crest="team.crest"
-      />
+      >
+        <h3>
+          {{ team.competition.shortname }}
+        </h3>
+
+        <Team
+          :id="team.id"
+          :crest="team.crest"
+        >
+          {{ team.competition.year }}
+        </Team>
+      </div>
     </section>
 
     <section>
