@@ -103,7 +103,8 @@ export default {
       crest: 'crest-flamengo',
       name: 'Clube de Regatas do Flamengo',
       shortname: 'Flamengo',
-      brasileirao: [2009],
+      libertadores: [2019],
+      brasileirao: [2009, 2019],
       copaDoBrasil: [2006, 2013],
       copaDosCampeoes: [2001]
     }),
