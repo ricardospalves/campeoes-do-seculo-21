@@ -8,6 +8,7 @@
     }"
   >
     <Crest
+      class="w-24 h-24 mx-auto"
       :use="crest"
     />
 
