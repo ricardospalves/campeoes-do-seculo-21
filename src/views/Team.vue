@@ -1,16 +1,20 @@
 <template>
-  <div>
-    <Crest :use="team.crest"/>
+  <div class="py-8">
+    <Crest
+      class="block mx-auto w-32 h-32"
+      :use="team.crest"
+    />
 
-    <h2>
+    <h2 class="text-lg text-center font-bold">
       {{ team.name }}
     </h2>
 
     <div
+      class="max-w-xl mx-auto mt-8"
       v-for="honour in honours"
       :key="honour.name"
     >
-      <h3>
+      <h3 class="font-bold">
         {{ honour.name }}
       </h3>
 
