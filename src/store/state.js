@@ -62,6 +62,14 @@ class Team {
   }
 }
 
+class Social {
+  constructor({ name, url, iconID }) {
+    this.name = name
+    this.url = url
+    this.iconID = iconID
+  }
+}
+
 export default {
   appName: 'Campeões do Século 21',
   teams: [
@@ -210,6 +218,18 @@ export default {
       libertadores: [2005],
       sulAmericana: [2012],
       brasileirao: [2006, 2007, 2008]
+    })
+  ],
+  socials: [
+    new Social({
+      name: 'GitHub',
+      url: 'https://github.com/ricardospalves',
+      iconID: '#icon-github'
+    }),
+    new Social({
+      name: 'CodePen',
+      url: 'https://codepen.io/ricardospalves',
+      iconID: '#icon-codepen'
     })
   ]
 }
