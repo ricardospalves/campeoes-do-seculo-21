@@ -3,7 +3,7 @@
     <Icons/>
     <Header/>
 
-    <router-view/>
+    <router-view class="py-8"/>
   </div>
 </template>
 

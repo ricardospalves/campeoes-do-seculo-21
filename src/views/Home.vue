@@ -1,6 +1,6 @@
 <template>
   <article>
-    <section class="my-16">
+    <section class="mb-16">
       <h2 class="font-bold uppercase text-center text-lg">
         Últimos brasileiros campeões de cada competição
       </h2>
@@ -11,7 +11,7 @@
           v-for="team in mostRecentChampions"
           :key="team.competition.name"
         >
-          <h3 class="font-bold mb-2 text-gray-700">
+          <h3 class="font-bold mb-2">
             {{ team.competition.shortname }}
           </h3>
 
