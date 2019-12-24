@@ -4,6 +4,12 @@
 
 Projeto que reúne os clubes brasileiros que ganharam títulos importantes no século 21.
 
+[Website](https://campeoes-do-seculo-21.netlify.com/)
+
+## Motivação
+
+Meu objetivo com este projeto é treinar minhas habilidades com Vue.js e seu ecossistema.
+
 ## Project setup
 ```
 npm install
