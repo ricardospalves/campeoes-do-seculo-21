@@ -1,4 +1,6 @@
-# campeoes-do-seculo-21
+# Campeões do Século 21
+
+Projeto que reúne os clubes brasileiros que ganharam títulos importantes no século 21.
 
 ## Project setup
 ```
