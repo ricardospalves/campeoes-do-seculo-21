@@ -9,6 +9,7 @@ module.exports = {
     process.env.NODE_ENV === 'production' ? purgecss({
       content: [
         './src/**/*.vue',
+        './public/**/*.html',
         './src/**/*.js'
       ],
       // Include any special characters you're using in this regular expression
