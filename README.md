@@ -1,5 +1,7 @@
 # Campeões do Século 21
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5de8d7dc-93f6-49c0-984d-bbea4f788374/deploy-status)](https://app.netlify.com/sites/upbeat-stonebraker-5b481a/deploys)
+
 Projeto que reúne os clubes brasileiros que ganharam títulos importantes no século 21.
 
 ## Project setup
