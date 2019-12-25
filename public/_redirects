@@ -1,5 +1,1 @@
-[[redirects]]
-from = "/*"
-to = "/404"
-status = 404
-force = false
+/* /404 404
