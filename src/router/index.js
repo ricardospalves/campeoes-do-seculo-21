@@ -6,7 +6,6 @@ import Team from '../views/Team.vue'
 import PageNotFound from '../views/PageNotFound.vue'
 import state from '../store/state'
 
-const DEFAULT_TITLE = state.appName
 const TEAMS = state.teams
 
 Vue.use(VueRouter)
@@ -16,10 +15,7 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: Home,
-    meta: {
-      title: DEFAULT_TITLE
-    }
+    component: Home
   },
   {
     path: '/:id',
@@ -30,8 +26,6 @@ const routes = [
       const team = TEAMS.find(team => team.id === to.params.id)
 
       if(team) {
-        document.title = `${team.shortname} | ${document.title}`
-
         next()
       }
 
@@ -53,18 +47,6 @@ const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes
-})
-
-router.beforeEach((to, from, next) => {
-  if(to.meta.title) {
-    document.title = DEFAULT_TITLE
-  }
-
-  else {
-    document.title = DEFAULT_TITLE
-  }
-
-  next()
 })
 
 export default router

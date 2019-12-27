@@ -32,6 +32,8 @@ export default {
     ])
   },
   metaInfo: {
+    title: 'Campeões do Século 21',
+    titleTemplate: '%s | Campeões do Século 21',
     htmlAttrs: {
       lang: 'pt-BR'
     }

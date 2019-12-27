@@ -65,6 +65,9 @@ export default {
         mostRecentChampion('copaDosCampeoes')
       ]
     }
+  },
+  metaInfo: {
+    titleTemplate: null
   }
 }
 </script>

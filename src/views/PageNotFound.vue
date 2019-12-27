@@ -18,6 +18,9 @@ import RandomTeams from '../components/RandomTeams'
 export default {
   components: {
     RandomTeams
+  },
+  metaInfo: {
+    title: 'Página não encontrada'
   }
 }
 </script>

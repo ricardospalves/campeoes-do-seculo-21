@@ -62,6 +62,11 @@ export default {
         .join(', ')
         .replace(/,([^,]*)$/, ' e $1')
     }
+  },
+  metaInfo() {
+    return {
+      title: this.team.shortname
+    }
   }
 }
 </script>
