@@ -33,36 +33,23 @@
         Todos os brasileiros campeões neste século
       </h2>
 
-      <div class="flex flex-wrap max-w-xl mx-auto">
-        <Team
-          class="w-1/2 sm:w-1/3"
-          v-for="team in randomTeams"
-          :key="team.id"
-          :id="team.id"
-          :crest="team.crest"
-        >
-          <p slot="desc">
-            <strong>{{ team.shortname }}</strong>
-          </p>
-        </Team>|
-      </div>
-
-
+      <RandomTeams class="max-w-xl mx-auto"/>
     </section>
   </article>
 </template>
 
 <script>
 import Team from '../components/Team'
+import RandomTeams from '../components/RandomTeams'
 import { mapGetters } from 'vuex'
 
 export default {
   components: {
-    Team
+    Team,
+    RandomTeams
   },
   computed: {
     ...mapGetters([
-      'randomTeams',
       'mostRecentChampion'
     ]),
     mostRecentChampions() {
