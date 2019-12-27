@@ -30,6 +30,11 @@ export default {
     ...mapState([
       'teams'
     ])
+  },
+  metaInfo: {
+    htmlAttrs: {
+      lang: 'pt-BR'
+    }
   }
 }
 </script>
