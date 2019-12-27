@@ -14,13 +14,27 @@
 
 <script>
 import RandomTeams from '../components/RandomTeams'
+import { mapState } from 'vuex'
 
 export default {
   components: {
     RandomTeams
   },
-  metaInfo: {
-    title: 'Página não encontrada'
+  computed: {
+    ...mapState([
+      'appDescription'
+    ])
+  },
+  metaInfo() {
+    return {
+      title: 'Página não encontrada',
+      meta: [
+        {
+          name: 'description',
+          content: this.appDescription
+        }
+      ]
+    }
   }
 }
 </script>

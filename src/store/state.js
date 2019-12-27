@@ -72,6 +72,7 @@ class Social {
 
 export default {
   appName: 'Campeões do Século 21',
+  appDescription: 'Clubes brasileiros que ganharam títulos importantes no século 21',
   teams: [
     new Team({
       id: 'chapecoense',

@@ -64,8 +64,16 @@ export default {
     }
   },
   metaInfo() {
+    const teamShortname = this.team.shortname
+
     return {
-      title: this.team.shortname
+      title: teamShortname,
+      meta: [
+        {
+          name: 'description',
+          content: `Títulos do ${teamShortname} no séculos 21`
+        }
+      ]
     }
   }
 }

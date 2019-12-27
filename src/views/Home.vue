@@ -41,7 +41,7 @@
 <script>
 import Team from '../components/Team'
 import RandomTeams from '../components/RandomTeams'
-import { mapGetters } from 'vuex'
+import { mapState, mapGetters } from 'vuex'
 
 export default {
   components: {
@@ -49,6 +49,9 @@ export default {
     RandomTeams
   },
   computed: {
+    ...mapState([
+      'appDescription'
+    ]),
     ...mapGetters([
       'mostRecentChampion'
     ]),
@@ -66,8 +69,16 @@ export default {
       ]
     }
   },
-  metaInfo: {
-    titleTemplate: null
+  metaInfo() {
+    return {
+      titleTemplate: null,
+      meta: [
+        {
+          name: 'description',
+          content: this.appDescription
+        }
+      ]
+    }
   }
 }
 </script>
