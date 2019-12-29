@@ -1,0 +1,20 @@
+{
+    "name": "Campe\u00f5es do S\u00e9c 21",
+    "short_name": "Campe\u00f5es do S\u00e9c 21",
+    "icons": [
+        {
+            "src": "/favicons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "start_url": "https://campeoes-do-seculo-21.netlify.com",
+    "display": "standalone"
+}
