@@ -12,7 +12,6 @@
         >
           <a
             class="flex items-center justify-center w-12 h-12 p-2 hover:text-black focus:text-black"
-            target="_blank"
             :href="social.url"
             :title="social.name"
           >
