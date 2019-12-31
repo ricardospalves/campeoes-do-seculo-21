@@ -19,12 +19,13 @@
         </router-link>
       </h1>
 
-      <a
-        href="#sobre"
+      <router-link
+        to="#sobre"
         class="flex items-center justify-center px-2 hover:bg-gray-300 focus:bg-gray-300"
+        @click.native="scrollFix('#sobre')"
       >
         Sobre
-      </a>
+      </router-link>
     </div>
   </header>
 </template>
@@ -37,6 +38,14 @@ export default {
     ...mapState([
       'appName'
     ])
+  },
+  mounted() {
+    setTimeout(() => this.scrollFix(this.$route.hash), 1)
+  },
+  methods: {
+    scrollFix(hashbang) {
+      location.hash = hashbang
+    }
   }
 }
 </script>
