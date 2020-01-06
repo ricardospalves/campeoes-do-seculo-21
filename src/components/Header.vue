@@ -1,5 +1,5 @@
 <template>
-  <header class="flex-shrink-0 px-2 border-b border-solid border-gray-300">
+  <header class="flex-shrink-0 fixed top-0 inset-x-0 z-10 px-2 border-b border-solid border-gray-300 bg-white">
     <div class="flex justify-between max-w-5xl mx-auto h-16">
       <h1 class="text-lg font-bold uppercase">
         <router-link

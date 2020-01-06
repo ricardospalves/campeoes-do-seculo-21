@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="flex flex-col">
+  <div id="app" class="flex flex-col pt-16">
     <Icons/>
     <div class="flex flex-col min-h-screen">
       <Header/>
