@@ -1,11 +1,13 @@
 <template>
-  <div id="app">
+  <div id="app" class="flex flex-col">
     <Icons/>
-    <Header/>
+    <div class="flex flex-col min-h-screen">
+      <Header/>
 
-    <router-view class="py-8"/>
+      <router-view class="flex-grow flex-shrink-0 py-8"/>
 
-    <Footer/>
+      <Footer/>
+    </div>
   </div>
 </template>
 

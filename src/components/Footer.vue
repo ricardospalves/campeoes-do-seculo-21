@@ -1,5 +1,5 @@
 <template>
-  <footer class="h-12 px-2 border-t border-solid border-gray-300">
+  <footer class="flex-shrink-0 h-12 px-2 border-t border-solid border-gray-300">
     <div class="flex justify-between items-center max-w-5xl mx-auto">
       <p class="pr-4">
         Criado por Ricardo Alves - <a href="https://github.com/ricardospalves/campeoes-do-seculo-21" class="underline">Ver no GitHub</a>
