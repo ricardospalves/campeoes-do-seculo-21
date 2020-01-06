@@ -18,6 +18,19 @@
           </span>
         </router-link>
       </h1>
+
+      <nav class="h-full">
+        <router-link
+          :to="{
+            name: 'about'
+          }"
+          class="flex items-center justify-center h-full px-2 hover:bg-gray-300 focus:bg-gray-300"
+          :class="`hover:${highlightBg} focus:${highlightBg}`"
+          :active-class="highlightBg"
+        >
+          Sobre
+        </router-link>
+      </nav>
     </div>
   </header>
 </template>
@@ -26,6 +39,11 @@
 import { mapState } from 'vuex'
 
 export default {
+  data() {
+    return {
+      highlightBg: 'bg-gray-300'
+    }
+  },
   computed: {
     ...mapState([
       'appName'
