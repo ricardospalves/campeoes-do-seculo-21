@@ -65,6 +65,7 @@ export default {
         mostRecentChampion('jLeagueConmebol'),
         mostRecentChampion('brasileirao'),
         mostRecentChampion('copaDoBrasil'),
+        mostRecentChampion('supercopaDoBrasil'),
         mostRecentChampion('copaDosCampeoes')
       ]
     }

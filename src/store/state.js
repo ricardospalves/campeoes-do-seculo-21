@@ -115,6 +115,7 @@ export default {
       libertadores: [2019],
       brasileirao: [2009, 2019],
       copaDoBrasil: [2006, 2013],
+      supercopaDoBrasil: [2020],
       copaDosCampeoes: [2001]
     }),
     new Team({
