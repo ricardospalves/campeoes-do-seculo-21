@@ -114,6 +114,7 @@ export default {
       shortname: 'Flamengo',
       libertadores: [2019],
       brasileirao: [2009, 2019],
+      recopa: [2020],
       copaDoBrasil: [2006, 2013],
       supercopaDoBrasil: [2020],
       copaDosCampeoes: [2001]
