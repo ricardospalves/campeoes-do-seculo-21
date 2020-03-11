@@ -4,7 +4,7 @@
 
 Projeto que reúne os clubes brasileiros que ganharam títulos importantes no século 21.
 
-[Website](https://campeoes-do-seculo-21.netlify.com/)
+[Website](https://campeoes-do-seculo-21.netlify.app/)
 
 ## Motivação
 
