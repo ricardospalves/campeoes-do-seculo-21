@@ -5,7 +5,12 @@
     <div class="flex flex-col min-h-screen">
       <Header/>
 
-      <router-view class="flex-grow flex-shrink-0 pt-24 pb-8"/>
+      <transition
+        name="change-page"
+        mode="out-in"
+      >
+        <router-view class="flex-grow flex-shrink-0 pt-24 pb-8"/>
+      </transition>
 
       <Footer/>
     </div>
@@ -39,3 +44,23 @@ export default {
   }
 }
 </script>
+
+<style>
+  @keyframes change-page {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  [class*="change-page-"] {
+    animation: change-page .2s ease;
+  }
+
+  .change-page-leave-active {
+    animation-direction: reverse;
+  }
+</style>
