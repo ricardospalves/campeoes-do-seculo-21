@@ -2,7 +2,7 @@
   <div id="sobre">
     <div class="max-w-xl mx-auto px-2">
       <h2 class="font-bold uppercase text-center text-lg">
-        Sobre
+        {{ title }}
       </h2>
 
       <p class="my-4">
@@ -30,9 +30,12 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   data() {
     return {
+      title: 'Sobre',
       competitions: [
         {
           name: 'Copa do Mundo de Clubes da FIFA',
@@ -70,6 +73,22 @@ export default {
           name: 'Copa dos Campeões',
           isExtinct: true
         },
+      ]
+    }
+  },
+  computed: {
+    ...mapState([
+      'appDescription'
+    ])
+  },
+  metaInfo() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          name: 'description',
+          content: this.appDescription
+        }
       ]
     }
   }
