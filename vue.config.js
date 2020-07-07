@@ -5,7 +5,7 @@ module.exports = {
     msTileColor: '#000000',
     appleMobileWebAppCapable: 'yes',
     manifestOptions: {
-      start_url: 'https://campeoes-do-seculo-21.netlify.app'
+      start_url: 'https://campeoesdoseculo21.netlify.app'
     },
     workboxOptions: {
       exclude: [
