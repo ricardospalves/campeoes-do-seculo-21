@@ -2,7 +2,7 @@
   <article>
     <section class="mb-16">
       <h2 class="font-bold uppercase text-center text-lg">
-        Últimos brasileiros campeões de cada competição
+        Últimos brasileiros campeões em cada competição
       </h2>
 
       <div class="flex flex-wrap max-w-xl mx-auto">
@@ -30,7 +30,7 @@
       <h2
         class="font-bold uppercase text-center text-lg"
       >
-        Todos os brasileiros campeões neste século
+        Todos os brasileiros campeões no século 21
       </h2>
 
       <RandomTeams class="max-w-xl mx-auto"/>
