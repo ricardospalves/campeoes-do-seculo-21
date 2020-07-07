@@ -16,55 +16,55 @@ const paths = [
     path: 'https://campeoesdoseculo21.netlify.app/sobre/'
   }),
   new Path({
-    path: "https://campeoesdoseculo21.netlify.app/palmeiras/"
+    path: 'https://campeoesdoseculo21.netlify.app/palmeiras/'
   }),
   new Path({
-    path: "https://campeoesdoseculo21.netlify.app/atletico-mg/"
+    path: 'https://campeoesdoseculo21.netlify.app/atletico-mg/'
   }),
   new Path({
-    path: "https://campeoesdoseculo21.netlify.app/sao-paulo/"
+    path: 'https://campeoesdoseculo21.netlify.app/sao-paulo/'
   }),
   new Path({
-    path: "https://campeoesdoseculo21.netlify.app/flamengo/"
+    path: 'https://campeoesdoseculo21.netlify.app/flamengo/'
   }),
   new Path({
-    path: "https://campeoesdoseculo21.netlify.app/santos/"
+    path: 'https://campeoesdoseculo21.netlify.app/santos/'
   }),
   new Path({
-    path: "https://campeoesdoseculo21.netlify.app/fluminense/"
+    path: 'https://campeoesdoseculo21.netlify.app/fluminense/'
   }),
   new Path({
-    path: "https://campeoesdoseculo21.netlify.app/paysandu/"
+    path: 'https://campeoesdoseculo21.netlify.app/paysandu/'
   }),
   new Path({
-    path: "https://campeoesdoseculo21.netlify.app/internacional/"
+    path: 'https://campeoesdoseculo21.netlify.app/internacional/'
   }),
   new Path({
-    path: "https://campeoesdoseculo21.netlify.app/paulista/"
+    path: 'https://campeoesdoseculo21.netlify.app/paulista/'
   }),
   new Path({
-    path: "https://campeoesdoseculo21.netlify.app/corinthians/"
+    path: 'https://campeoesdoseculo21.netlify.app/corinthians/'
   }),
   new Path({
-    path: "https://campeoesdoseculo21.netlify.app/vasco/"
+    path: 'https://campeoesdoseculo21.netlify.app/vasco/'
   }),
   new Path({
-    path: "https://campeoesdoseculo21.netlify.app/gremio/"
+    path: 'https://campeoesdoseculo21.netlify.app/gremio/'
   }),
   new Path({
-    path: "https://campeoesdoseculo21.netlify.app/santo-andre/"
+    path: 'https://campeoesdoseculo21.netlify.app/santo-andre/'
   }),
   new Path({
-    path: "https://campeoesdoseculo21.netlify.app/sport/"
+    path: 'https://campeoesdoseculo21.netlify.app/sport/'
   }),
   new Path({
-    path: "https://campeoesdoseculo21.netlify.app/athletico-pr/"
+    path: 'https://campeoesdoseculo21.netlify.app/athletico-pr/'
   }),
   new Path({
-    path: "https://campeoesdoseculo21.netlify.app/chapecoense/"
+    path: 'https://campeoesdoseculo21.netlify.app/chapecoense/'
   }),
   new Path({
-    path: "https://campeoesdoseculo21.netlify.app/cruzeiro/"
+    path: 'https://campeoesdoseculo21.netlify.app/cruzeiro/'
   })
 ]
 
