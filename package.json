@@ -27,6 +27,7 @@
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.1.2",
     "purgecss": "^1.4.2",
+    "sitemap-webpack-plugin": "^0.8.1",
     "tailwindcss": "^1.4.6",
     "vue-template-compiler": "^2.6.11"
   }
