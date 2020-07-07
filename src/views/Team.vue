@@ -71,7 +71,7 @@ export default {
       meta: [
         {
           name: 'description',
-          content: `Títulos do ${teamShortname} no séculos 21`
+          content: `Títulos do ${teamShortname} no século 21`
         }
       ]
     }
