@@ -1,5 +1,5 @@
 <template>
-  <div class="px-2 py-4">
+  <div>
     <slot name="title"></slot>
 
     <router-link

@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-wrap">
+  <div class="grid grid-cols-12 gap-4">
     <Team
-      class="w-1/2 sm:w-1/3"
+      class="col-span-6 md:col-span-4"
       v-for="team in randomTeams"
       :key="team.id"
       :id="team.id"

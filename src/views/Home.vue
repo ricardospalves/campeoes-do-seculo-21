@@ -1,15 +1,18 @@
 <template>
   <article>
     <section class="mb-16">
-      <h2 class="font-bold uppercase text-center text-lg">
+      <h2 class="mb-2 font-bold uppercase text-center text-lg">
         Últimos brasileiros campeões em cada competição
       </h2>
 
-      <div class="flex flex-wrap max-w-xl mx-auto">
+      <div class="grid grid-cols-12 gap-4 max-w-xl mx-auto p-2">
         <Team
-          class="w-full sm:w-1/3"
-          v-for="team in mostRecentChampions"
+          class="col-span-12 sm:col-span-6 md:col-span-4 sm:mt-0"
+          v-for="(team, teamIndex) in mostRecentChampions"
           :key="team.competition.name"
+          :class="{
+            'mt-4': teamIndex
+          }"
           :id="team.id"
           :crest="team.crest"
         >
@@ -28,12 +31,12 @@
 
     <section>
       <h2
-        class="font-bold uppercase text-center text-lg"
+        class="mb-2 font-bold uppercase text-center text-lg"
       >
         Todos os brasileiros campeões no século 21
       </h2>
 
-      <RandomTeams class="max-w-xl mx-auto"/>
+      <RandomTeams class="max-w-xl mx-auto p-2"/>
     </section>
   </article>
 </template>
