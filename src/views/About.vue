@@ -1,6 +1,6 @@
 <template>
   <div id="sobre">
-    <div class="max-w-xl mx-auto px-2">
+    <div class="max-w-xl mx-auto">
       <h2 class="font-bold uppercase text-center text-lg">
         {{ title }}
       </h2>

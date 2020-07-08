@@ -5,7 +5,7 @@
         Últimos brasileiros campeões em cada competição
       </h2>
 
-      <div class="grid grid-cols-12 gap-4 max-w-xl mx-auto p-2">
+      <div class="grid grid-cols-12 gap-4 max-w-xl mx-auto">
         <Team
           class="col-span-12 sm:col-span-6 md:col-span-4 sm:mt-0"
           v-for="(team, teamIndex) in mostRecentChampions"
@@ -36,7 +36,7 @@
         Todos os brasileiros campeões no século 21
       </h2>
 
-      <RandomTeams class="max-w-xl mx-auto p-2"/>
+      <RandomTeams class="max-w-xl mx-auto"/>
     </section>
   </article>
 </template>

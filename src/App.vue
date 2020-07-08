@@ -9,7 +9,7 @@
         name="change-page"
         mode="out-in"
       >
-        <router-view class="flex-grow flex-shrink-0 pt-24 pb-8"/>
+        <router-view class="flex-grow flex-shrink-0 pt-24 pb-8 px-2"/>
       </transition>
 
       <Footer/>

@@ -1,5 +1,5 @@
 <template>
-  <div class="px-2">
+  <div>
     <Crest
       class="block mx-auto w-32 h-32"
       :use="team.crest"
