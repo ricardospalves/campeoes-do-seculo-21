@@ -23,7 +23,7 @@ export default {
     Team
   },
   computed: {
-    ...mapGetters([
+    ...mapGetters('teams', [
       'randomTeams'
     ])
   }

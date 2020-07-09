@@ -26,6 +26,7 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import Crest from '../components/Crest'
 
 export default {
@@ -36,8 +37,11 @@ export default {
     Crest
   },
   computed: {
+    ...mapGetters('teams', [
+      'getTeamById'
+    ]),
     team() {
-      return this.$store.getters.getTeamById(this.id)
+      return this.getTeamById(this.id)
     },
     honours() {
       const team = this.team

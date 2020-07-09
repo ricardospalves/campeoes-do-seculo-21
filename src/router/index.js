@@ -5,7 +5,8 @@ import Home from '../views/Home.vue'
 import Team from '../views/Team.vue'
 import About from '../views/About.vue'
 import PageNotFound from '../views/PageNotFound.vue'
-import state from '../store/state'
+
+import state from '../store/modules/teams/state'
 
 const TEAMS = state.teams
 

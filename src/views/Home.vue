@@ -55,7 +55,7 @@ export default {
     ...mapState([
       'appDescription'
     ]),
-    ...mapGetters([
+    ...mapGetters('teams', [
       'mostRecentChampion'
     ]),
     mostRecentChampions() {

@@ -31,7 +31,7 @@ export default {
     Icons
   },
   computed: {
-    ...mapState([
+    ...mapState('teams', [
       'teams'
     ])
   },
