@@ -1,3 +1,21 @@
+function findRegion(state) {
+  const regions = {
+    norte: ['AM', 'RR', 'AP', 'PA', 'TO', 'RO', 'AC'],
+    nordeste: ['MA', 'PI', 'CE', 'RN', 'PE', 'PB', 'SE', 'AL', 'BA'],
+    centrooeste: ['MT', 'MS', 'GO'],
+    sudeste: ['SP', 'RJ', 'ES', 'MG'],
+    sul: ['PR', 'RS', 'SC']
+  }
+
+  for (const region in regions) {
+    if (regions[region].includes(state)) {
+      return region
+    }
+  }
+
+  return ''
+}
+
 class Competition {
   constructor({ name, shortname, years = [] }) {
     this.name = name
@@ -13,6 +31,7 @@ class Team {
     this.name = name
     this.shortname = shortname
     this.state = state
+    this.region = findRegion(this.state)
     this.honours = {
       mundial: new Competition({
         name: 'Copa do Mundo de Clubes da FIFA',
