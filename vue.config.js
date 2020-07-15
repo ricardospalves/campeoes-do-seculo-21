@@ -85,7 +85,7 @@ module.exports = {
   },
   configureWebpack: {
     plugins: [
-      new SiteMap('https://mywebsite.com', paths, {
+      new SiteMap('https://campeoesdoseculo21.netlify.app', paths, {
         filename: 'sitemap.xml',
         lastmod: true,
         priority: '1'
