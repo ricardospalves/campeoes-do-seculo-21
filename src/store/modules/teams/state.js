@@ -203,6 +203,7 @@ export default {
       name: 'Sociedade Esportiva Palmeiras',
       shortname: 'Palmeiras',
       state: 'SP',
+      libertadores: [2020],
       brasileirao: [2016, 2018],
       copaDoBrasil: [2012, 2015]
     }),
