@@ -205,7 +205,7 @@ export default {
       state: 'SP',
       libertadores: [2020],
       brasileirao: [2016, 2018],
-      copaDoBrasil: [2012, 2015]
+      copaDoBrasil: [2012, 2015, 2020]
     }),
     new Team({
       id: 'corinthians',
