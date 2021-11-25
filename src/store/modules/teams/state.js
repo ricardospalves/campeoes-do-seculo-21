@@ -98,7 +98,7 @@ export default {
       name: 'Club Athletico Paranaense',
       shortname: 'Athletico - PR',
       state: 'PR',
-      sulAmericana: [2018],
+      sulAmericana: [2018, 2021],
       jLeagueConmebol: [2019],
       brasileirao: [2001],
       copaDoBrasil: [2019]
