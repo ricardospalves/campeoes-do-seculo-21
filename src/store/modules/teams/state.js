@@ -119,7 +119,7 @@ export default {
       state: 'MG',
       libertadores: [2013],
       recopa: [2014],
-      copaDoBrasil: [2014],
+      copaDoBrasil: [2014, 2021],
       brasileirao: [2021]
     }),
     new Team({
