@@ -144,7 +144,7 @@ export default {
       name: "Clube de Regatas do Flamengo",
       shortname: "Flamengo",
       state: "RJ",
-      libertadores: [2019],
+      libertadores: [2019, 2022],
       brasileirao: [2009, 2019, 2020],
       recopa: [2020],
       copaDoBrasil: [2006, 2013, 2022],
