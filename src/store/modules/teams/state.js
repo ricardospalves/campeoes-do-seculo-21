@@ -223,7 +223,8 @@ export default {
       libertadores: [2020, 2021],
       brasileirao: [2016, 2018, 2022],
       copaDoBrasil: [2012, 2015, 2020],
-      recopa: [2022]
+      recopa: [2022],
+      supercopaDoBrasil: [2023]
     }),
     new Team({
       id: "corinthians",
