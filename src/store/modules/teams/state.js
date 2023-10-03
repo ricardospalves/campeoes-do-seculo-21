@@ -4,7 +4,7 @@ function findRegion(state) {
     nordeste: ["MA", "PI", "CE", "RN", "PE", "PB", "SE", "AL", "BA"],
     centrooeste: ["MT", "MS", "GO"],
     sudeste: ["SP", "RJ", "ES", "MG"],
-    sul: ["PR", "RS", "SC"]
+    sul: ["PR", "RS", "SC"],
   };
 
   for (const region in regions) {
@@ -39,7 +39,7 @@ class Team {
     brasileirao = [],
     copaDoBrasil = [],
     supercopaDoBrasil = [],
-    copaDosCampeoes = []
+    copaDosCampeoes = [],
   }) {
     this.id = id;
     this.crest = crest;
@@ -51,48 +51,48 @@ class Team {
       mundial: new Competition({
         name: "Copa do Mundo de Clubes da FIFA",
         shortname: "Mundial de Clubes",
-        years: mundial
+        years: mundial,
       }),
       libertadores: new Competition({
         name: "CONMEBOL Libertadores",
         shortname: "Libertadores",
-        years: libertadores
+        years: libertadores,
       }),
       sulAmericana: new Competition({
         name: "CONMEBOL Sul-Americana",
         shortname: "Sul-Americana",
-        years: sulAmericana
+        years: sulAmericana,
       }),
       recopa: new Competition({
         name: "CONMEBOL Recopa",
         shortname: "Recopa",
-        years: recopa
+        years: recopa,
       }),
       jLeagueConmebol: new Competition({
         name: "J.League YBC Levain Cup/CONMEBOL Sudamericana Final",
         shortname: "J.League/CONMEBOL",
-        years: jLeagueConmebol
+        years: jLeagueConmebol,
       }),
       brasileirao: new Competition({
         name: "Campeonato Brasileiro de Futebol",
         shortname: "Brasileirão",
-        years: brasileirao
+        years: brasileirao,
       }),
       copaDoBrasil: new Competition({
         name: "Copa do Brasil de Futebol",
         shortname: "Copa do Brasil",
-        years: copaDoBrasil
+        years: copaDoBrasil,
       }),
       supercopaDoBrasil: new Competition({
         name: "Supercopa do Brasil de Futebol",
         shortname: "Supercopa do Brasil",
-        years: supercopaDoBrasil
+        years: supercopaDoBrasil,
       }),
       copaDosCampeoes: new Competition({
         name: "Copa dos Campeões",
         shortname: "Copa dos Campeões",
-        years: copaDosCampeoes
-      })
+        years: copaDosCampeoes,
+      }),
     };
   }
 }
@@ -105,7 +105,7 @@ export default {
       name: "Associação Chapecoense de Futebol",
       shortname: "Chapecoense",
       state: "SC",
-      sulAmericana: [2016]
+      sulAmericana: [2016],
     }),
     new Team({
       id: "athletico-pr",
@@ -116,7 +116,7 @@ export default {
       sulAmericana: [2018, 2021],
       jLeagueConmebol: [2019],
       brasileirao: [2001],
-      copaDoBrasil: [2019]
+      copaDoBrasil: [2019],
     }),
     new Team({
       id: "vasco",
@@ -124,7 +124,7 @@ export default {
       name: "Club de Regatas Vasco da Gama",
       shortname: "Vasco",
       state: "RJ",
-      copaDoBrasil: [2011]
+      copaDoBrasil: [2011],
     }),
     new Team({
       id: "atletico-mg",
@@ -136,7 +136,7 @@ export default {
       recopa: [2014],
       copaDoBrasil: [2014, 2021],
       brasileirao: [2021],
-      supercopaDoBrasil: [2022]
+      supercopaDoBrasil: [2022],
     }),
     new Team({
       id: "flamengo",
@@ -149,7 +149,7 @@ export default {
       recopa: [2020],
       copaDoBrasil: [2006, 2013, 2022],
       supercopaDoBrasil: [2020, 2021],
-      copaDosCampeoes: [2001]
+      copaDosCampeoes: [2001],
     }),
     new Team({
       id: "cruzeiro",
@@ -158,7 +158,7 @@ export default {
       shortname: "Cruzeiro",
       state: "MG",
       brasileirao: [2003, 2013, 2014],
-      copaDoBrasil: [2003, 2017, 2018]
+      copaDoBrasil: [2003, 2017, 2018],
     }),
     new Team({
       id: "santo-andre",
@@ -166,7 +166,7 @@ export default {
       name: "Esporte Clube Santo André",
       shortname: "Santo André",
       state: "SP",
-      copaDoBrasil: [2004]
+      copaDoBrasil: [2004],
     }),
     new Team({
       id: "fluminense",
@@ -175,7 +175,7 @@ export default {
       shortname: "Fluminense",
       state: "RJ",
       brasileirao: [2010, 2012],
-      copaDoBrasil: [2007]
+      copaDoBrasil: [2007],
     }),
     new Team({
       id: "gremio",
@@ -185,7 +185,7 @@ export default {
       state: "RS",
       libertadores: [2017],
       recopa: [2018],
-      copaDoBrasil: [2001, 2016]
+      copaDoBrasil: [2001, 2016],
     }),
     new Team({
       id: "paulista",
@@ -193,7 +193,7 @@ export default {
       name: "Paulista Futebol Clube",
       shortname: "Paulista",
       state: "SP",
-      copaDoBrasil: [2005]
+      copaDoBrasil: [2005],
     }),
     new Team({
       id: "paysandu",
@@ -201,7 +201,7 @@ export default {
       name: "Paysandu Sport Club",
       shortname: "Paysandu",
       state: "PA",
-      copaDosCampeoes: [2002]
+      copaDosCampeoes: [2002],
     }),
     new Team({
       id: "santos",
@@ -212,7 +212,7 @@ export default {
       libertadores: [2011],
       recopa: [2012],
       brasileirao: [2002, 2004],
-      copaDoBrasil: [2010]
+      copaDoBrasil: [2010],
     }),
     new Team({
       id: "palmeiras",
@@ -224,7 +224,7 @@ export default {
       brasileirao: [2016, 2018, 2022],
       copaDoBrasil: [2012, 2015, 2020],
       recopa: [2022],
-      supercopaDoBrasil: [2023]
+      supercopaDoBrasil: [2023],
     }),
     new Team({
       id: "corinthians",
@@ -236,7 +236,7 @@ export default {
       libertadores: [2012],
       recopa: [2013],
       brasileirao: [2005, 2011, 2015, 2017],
-      copaDoBrasil: [2002, 2009]
+      copaDoBrasil: [2002, 2009],
     }),
     new Team({
       id: "internacional",
@@ -248,7 +248,7 @@ export default {
       libertadores: [2006, 2010],
       sulAmericana: [2008],
       recopa: [2007, 2011],
-      jLeagueConmebol: [2009]
+      jLeagueConmebol: [2009],
     }),
     new Team({
       id: "sport",
@@ -256,7 +256,7 @@ export default {
       name: "Sport Club do Recife",
       shortname: "Sport",
       state: "PE",
-      copaDoBrasil: [2008]
+      copaDoBrasil: [2008],
     }),
     new Team({
       id: "sao-paulo",
@@ -267,7 +267,8 @@ export default {
       mundial: [2005],
       libertadores: [2005],
       sulAmericana: [2012],
-      brasileirao: [2006, 2007, 2008]
-    })
-  ]
+      copaDoBrasil: [2023],
+      brasileirao: [2006, 2007, 2008],
+    }),
+  ],
 };
