@@ -177,6 +177,7 @@ export default {
       brasileirao: [2010, 2012],
       copaDoBrasil: [2007],
       libertadores: [2023],
+      recopa: [2024],
     }),
     new Team({
       id: "gremio",
