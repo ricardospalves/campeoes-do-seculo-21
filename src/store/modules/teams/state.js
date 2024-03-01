@@ -269,6 +269,7 @@ export default {
       libertadores: [2005],
       sulAmericana: [2012],
       copaDoBrasil: [2023],
+      supercopaDoBrasil: [2024],
       brasileirao: [2006, 2007, 2008],
     }),
   ],
